@@ -1,0 +1,143 @@
+* {
+    scrollbar-width: 20px;
+    scrollbar-color: #8f54a0 #c2c2c2;
+}
+
+.board_component::-webkit-scrollbar {
+    width: 8px;
+}
+
+.board_component::-webkit-scrollbar-track {
+    background: #c2c2c2;
+}
+
+.board_component::-webkit-scrollbar-thumb {
+    background-color: #838ed6;
+    border-radius: 10px;
+    border: 3px solid #000;
+}
+
+.main_board_section::-webkit-scrollbar {
+    width: 10px;
+}
+
+.main_board_section::-webkit-scrollbar-track {
+    background: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main_board_section::-webkit-scrollbar-thumb {
+    background-color: #838ed6;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.search
+{
+    width: 100px;
+    margin-left: 200px;
+}
+
+.rightboard
+{
+    width: calc(95% - 320px);
+    margin-left: 300px;
+    position: relative;
+}
+
+.main_board_content
+{
+    width: 100%;
+}
+
+.main_board_section
+{
+    width: 100%;
+    display: inline-flex;
+    margin: 20px ;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    border: 2px solid #000;
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+.board
+{
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 10px 20px 10px 0px;
+    background-color: #c2c2c2;
+    border-radius: 10px;
+    width: 33%;
+    min-width: 120px;
+    padding-bottom: 5px;
+}
+
+.top_board
+{
+    height: 100px;
+}
+
+.board_component
+{
+    /* height: 500px; */
+    height: calc(82vh - 100px);
+    overflow-y: auto;
+    margin-bottom: 0px;
+
+}
+
+.board-title
+{
+    text-align: center;
+}
+
+.card
+{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: move;
+}
+
+
+@media screen  and (max-width: 1200px) {
+    .rightboard
+    {
+        width: 95%;
+        margin-left: 0px;
+    }
+    .board
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    .main_board_section
+    {
+        margin: 10px;
+    }
+    .rightboard
+    {
+        width: 95%;
+    }
+    .board_component
+    {
+        min-width: 120px;
+    }
+}
+
+@media screen  and (max-width: 668px) {
+    .board
+    {
+        font-size: 12px;
+    }
+    .board_component
+    {
+        min-width: 120px;
+    }
+}

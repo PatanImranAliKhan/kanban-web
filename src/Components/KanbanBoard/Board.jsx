@@ -19,13 +19,13 @@ export default function Board() {
               <h4>Kanban Board</h4>
             </div>
             <div className='search'>
-            <div>
-              <div className='form-group'>
-                <label>Search</label>
-                <input type="search" className='form-control me-2' />
+              <div>
+                <div className='form-group'>
+                  <label>Search</label>
+                  <input type="search" className='form-control' />
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div className='middle_board'>
             <div className='main_board_section'>
